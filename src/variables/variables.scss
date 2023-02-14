@@ -1,0 +1,26 @@
+
+$titleFont: 'Rubik', sans-serif;
+
+$primaryColor: #FEFEFE;
+$accentColor: #15A5E2;
+$textColor: #0f0f0f;
+
+@mixin buttonStyle($color, $fontSize) {
+    font-size: $fontSize;
+    background-color: $accentColor;
+    color: $color;
+    border-color: transparent;
+    border-radius: 16px;
+    padding: 3%;
+
+
+}
+@mixin inputStyle($width, $height) {
+    background-color: $primaryColor;
+    color: $textColor;
+    border-color: #afafaf;
+    border-radius: 6px;
+    width: $width;
+    padding: 3%;
+
+}
