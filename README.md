@@ -27,7 +27,7 @@
 
 ## Table of contents
 1. [About The Project](#about-the-project)
-   *[Task](#task)
+   * [Task](#task)
     * [Built With](#built-with)
 2. [Installation](#installation)
 3. [Usage](#usage)
