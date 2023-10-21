@@ -32,12 +32,15 @@ export function DeliveryForm({
             surcharge += 2
         }
         else if (deliveryDistanceNum > 1000) {
-            surcharge += 2
-            /* let isZero = deliveryDistanceNum % 500
-            for ( let i = 1001; isZero != 0 ; i/500){
-                surcharge++
+            surcharge += 2;
+            deliveryDistanceNum -= 1000;
+        
+            while (deliveryDistanceNum > 0) {
+                surcharge += 1;
+                deliveryDistanceNum -= 500;
+            }
                 console.log(surcharge)
-            }*/
+            
         }
         if (itemsAmountNum >= 12) {
             surcharge += 0.50 * itemsAmountNum + 1.20
